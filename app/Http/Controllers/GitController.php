@@ -36,9 +36,9 @@ class GitController extends Controller
         try {
             $client = new Client([
                 'base_uri' => 'https://api.github.com/',
-                'headers' => [
-                    'Authorization' => 'token ' . 'a93184cdad585632404573f35f00297123cb99c5'
-                ]
+                //'headers' => [
+                    //'Authorization' => 'token ' . 'a93184cdad585632404573f35f00297123cb99c5'
+                //]
             ]);
             $searchName = request()->url;
             $pageNumber = (request()->page) ? request()->page : 1;
