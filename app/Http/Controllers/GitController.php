@@ -37,7 +37,7 @@ class GitController extends Controller
             $client = new Client([
                 'base_uri' => 'https://api.github.com/',
                 'headers' => [
-                    'Authorization' => 'token ' . 'd614cc4a8b8feb6c888460e462cc19ef06aaa1d1'
+                    'Authorization' => 'token ' . 'a93184cdad585632404573f35f00297123cb99c5'
                 ]
             ]);
             $searchName = request()->url;
