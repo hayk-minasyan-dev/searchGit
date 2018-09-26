@@ -14,5 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/search','GitController@gitsearch');
-Route::get('/getfollowers/{url}/{page}','GitController@getfollowers');
+Route::get('/search','SearchController@gitSearch');
+Route::get('/get-followers/{username}/{page}','SearchController@getFollowers');
+Route::get('/get-repos/{username}/{page}','SearchController@getRepos');
+
+Route::get('/search-twitter','SearchController@getTwitterUsers');
